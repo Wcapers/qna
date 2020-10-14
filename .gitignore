@@ -37,4 +37,3 @@ yarn-debug.log*
 
 # Ignore db config
 /config/database.yml
-Gemfile.lock
