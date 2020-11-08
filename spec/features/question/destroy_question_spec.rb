@@ -3,7 +3,7 @@ require 'rails_helper'
 feature 'User can destroy question', %q{
   In order to remove question from community
   As a authenticated user
-  I'd like to ba able to destroy question
+  I'd like to be able to destroy question
 } do
   describe 'Authenticated user' do
     given(:user) { create(:user) }
