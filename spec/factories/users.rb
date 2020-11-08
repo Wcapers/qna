@@ -1,11 +1,17 @@
 FactoryBot.define do
   sequence :email do |n|
-    "user#{n}@test.com"
+    "user_#{n}@mail.com"
   end
 
   factory :user do
     email
-    password { '12345678' }
-    password_confirmation { '12345678' }
+
+    password { '123456789' }
+    password_confirmation { '123456789' }
+
+    trait :empty_password do
+      password { '' }
+      password_confirmation { '' }
+    end
   end
 end

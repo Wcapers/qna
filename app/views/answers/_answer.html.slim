@@ -1,0 +1,6 @@
+= I18n.t('answers.header')
+- if answer.persisted?
+    = answer.body
+    br
+    -if current_user && current_user.author_of?(answer)
+        = button_to  I18n.t('answers.destroy_button'), answer_path(answer), method: :delete
