@@ -1,0 +1,7 @@
+
+h1 = I18n.t 'questions.header'
+- if @questions.any?
+  = render @questions
+- else
+  p No questions found. Create question. First!
+p= link_to 'Ask question', new_question_path
